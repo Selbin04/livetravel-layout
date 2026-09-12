@@ -1,0 +1,67 @@
+:root {
+  --ink: #14221c;
+  --muted: #4a5c54;
+  --surface: rgba(255, 252, 247, 0.88);
+  --line: rgba(20, 34, 28, 0.12);
+  --accent: #0f766e;
+  --accent-deep: #0a5c56;
+  --sky-top: #c8e4df;
+  --sky-mid: #e8f2ee;
+  --horizon: #f3ebe0;
+  --glow: rgba(15, 118, 110, 0.18);
+
+  --font-brand: 'Syne', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--ink);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, var(--glow), transparent 55%),
+    linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 42%, var(--horizon) 100%);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
